@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'roboto', sans-serif;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.width{
+  max-width: 80%;
+  margin: auto;
+}
+.col{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+}
+.col2{
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+section{
+  height:80vh;
+}
+
+header {
+  background-color: #fff;
+  color: black;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 15vh;
+  height: auto;
+  width: 100%;
+
+}
+.logo img{
+  width:20%;
+  margin: 2% 0%;
+
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+/* <--  hero section css start desktop  ---> */
+#hero{
+  background-color: cyan;
+}
+#hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 60px 0px;
+  max-height: 100%;
+}
+
+#hero-section .col2 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1em;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+/* <--  hero section css End desktop ---> */
+
+
+
+/* <-- Tablet media query start --> */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  body {
+    margin: 0px;
+    max-width: 100%;
+  }
+
+  header {
+    max-width: 100%;
+    height: 100px;
+    margin: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: none;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li {
+    padding: 15px;
+  }
+  /* <--  hero section css start tablet  ---> */
+
+  .hero-section {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+/* <--  hero section css End tablet ---> */
+}
+
+
+/* <-- Tablet media query end --> */
+
+
+
+
+
+/* <-- Mobile media query start --> */
+
+
+@media (min-width: 375px) and (max-width: 667px) {
+
+  body {
+    margin: 0px;
+  }
+
+  header {
+    max-width: 100%;
+    margin: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100px;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: none;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li {
+    padding:15px;
+  }
+  /* <--  hero section css start Mobile  ---> */
+
+  .hero-section {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+/* <--  hero section css End Mobile ---> */
+}
+/* 
+<-- Mobile media query end --> */
